@@ -1,0 +1,25 @@
+.help{
+  margin-bottom: 150px;
+  &__wrap{
+    @extend .flex-aic-jcsb;
+    gap: 40px;
+    padding: 0 20px;
+  }
+  &__img{
+    border-radius: 10px;
+    overflow: hidden;
+    max-width: 460px;
+    width: 100%;
+    img{
+      height: 450px;
+    }
+  }
+  &__title{
+    max-width: 600px;
+    margin-top: 30px;
+    margin-bottom: 32px;
+  }
+  &__desc{
+    font-size: 20px;
+  }
+}

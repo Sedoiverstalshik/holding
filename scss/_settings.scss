@@ -1,0 +1,24 @@
+@function px-to-rem($size, $basicSize: 16px) {
+  @return $size / $basicSize#{rem};
+}
+
+.flex-aic-jcsb{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.flex-aic-jcc{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.flex-aic-jcfs{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.flex-aifs-jcsb{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}

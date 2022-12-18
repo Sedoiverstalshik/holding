@@ -1,0 +1,69 @@
+@import '_settings';
+@import '_root';
+*, *::before, *::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+// @import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+h1, h2, h3, h4, h5, h6{
+  font-weight: 600;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+ul, li{
+  list-style: none;
+}
+img{
+  display: block;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+body{
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 400;
+  color: var(--text_color);
+  font-size:16px;
+  line-height: 1.55;
+}
+.container{
+  max-width: 1230px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.label{
+  display: inline-block;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  text-align: center;
+  border: 1px solid var(--accent_color);
+  border-radius: 10px;
+  // width: 150px;
+  max-height: 30px;
+  padding: 5px;
+}
+.title{
+  font-size: 50px;
+  line-height: 1.35;
+}
+.accent__btn{
+  @extend .flex-aic-jcc;
+  background-color: var(--accent_color);
+  border-radius: 10px;
+  color: var(--light_color);
+  width: 260px;
+  padding: 10px;
+  transition: background-color .3s linear;
+  &:hover{
+    background-color: #0d6da8;
+  }
+}
+@import '_header';
+@import '_intro';
+@import '_services';
+@import '_about';
+@import '_help';

@@ -1,0 +1,38 @@
+.intro{
+  margin-top: 130px;
+  &__wrap{
+    @extend .flex-aic-jcsb;
+  }
+  &__img{
+    max-width: 460px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    &::before{
+      content:'';
+      background-color: var(--accent_color) ;
+      opacity: .3;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+  }
+  &__text{
+    max-width: 662px;
+  }
+  &__label{
+    margin-bottom: 20px;
+  }
+  &__title{
+    margin-bottom: 20px;
+  }
+  &__desc{
+    font-size: 20px;
+    margin-bottom: 40px;
+  }
+  &__btn{
+    height: 55px;
+  }
+}
