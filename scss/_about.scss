@@ -1,13 +1,5 @@
 .about{
   margin-bottom: 150px;
-  &__top{
-    display: flex;
-    align-items: center;
-    margin-bottom: 60px;
-  }
-  &__label{
-    margin-right: 320px;
-  }
   &__desc{
     @extend .flex-aic-jcfs;
     gap: 40px;

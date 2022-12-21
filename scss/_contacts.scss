@@ -1,0 +1,99 @@
+.contacts {
+  &__wrap {
+  }
+  &__top {
+    
+  }
+  &__top-title {
+    margin-bottom: 20px;
+  }
+  &__desc {
+    font-size: 20px;
+    color: var(--text_color);
+    margin-bottom: 60px;
+    text-align: center;
+  }
+  &__top-box {
+    @extend .flex-aic-jcfs;
+    gap: 40px;
+    margin-bottom: 150px;
+  }
+  &__top-img{
+    max-width: 450px;
+    height: 450px;
+    border-radius: 10px;
+  }
+  &__top-form {
+    display: flex;
+    flex-direction: column;
+  }
+  &__top-input, 
+  &__top-textarea{
+    color: rgb(0, 0, 0);
+    border: 1px solid rgb(0, 0, 0);
+    background-color: transparent;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    padding: 15px 20px;
+    width: 600px;
+  }
+  &__top-textarea{
+    padding-top: 10px;
+    height: 85px;
+    resize: none;
+  }
+  &__top-checkbox{
+    position: relative;
+    top: 5px;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    background-color: transparent;
+    cursor: pointer;
+    &::after{
+      content: "";
+      display: block;
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      border: 2px solid rgb(24, 137, 203);
+    }
+  }
+  &__top-btn{
+    display: block;
+    font-size: 14px;
+    color: var(--light_color);
+    background-color: var(--accent_color);
+    border-radius: 10px;
+    width: 260px;
+    padding: 14px;
+    cursor: pointer;
+    border:none;
+  }
+  &__bottom-box{
+    @extend .flex-aifs-jcsb;
+    gap: 40px;
+    margin-bottom: 150px;
+  }
+  &__bottom-phone h4, &__bottom-email h4, &__bottom-social h4{
+    font-size: 20px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid var(--accent_color);
+    width: 360px;
+  }
+}
+
+.privacy {
+  &__policy {
+    font-size: 12px;
+    font-weight: 100;
+    color: rgb(0, 0, 0);
+    margin-bottom: 20px;
+    a{
+      color: rgb(51, 51, 51);
+      border-bottom: 1px solid rgb(15, 106, 163);
+    }
+  }
+}

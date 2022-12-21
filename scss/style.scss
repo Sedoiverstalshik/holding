@@ -34,21 +34,8 @@ body{
   margin: 0 auto;
   padding: 0 15px;
 }
-.label{
-  display: inline-block;
-  font-size: 13px;
-  letter-spacing: 0.5px;
-  text-transform: uppercase;
-  text-align: center;
-  border: 1px solid var(--accent_color);
-  border-radius: 10px;
-  // width: 150px;
-  max-height: 30px;
-  padding: 5px;
-}
 .title{
   font-size: 50px;
-  line-height: 1.35;
 }
 .accent__btn{
   @extend .flex-aic-jcc;
@@ -67,3 +54,5 @@ body{
 @import '_services';
 @import '_about';
 @import '_help';
+@import '_projects';
+@import '_contacts';

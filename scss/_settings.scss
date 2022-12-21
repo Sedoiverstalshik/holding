@@ -1,7 +1,11 @@
 @function px-to-rem($size, $basicSize: 16px) {
   @return $size / $basicSize#{rem};
 }
-
+.center{
+  text-align: center;
+  // max-width: 700px;
+  margin: 0 auto 60px auto;
+}
 .flex-aic-jcsb{
   display: flex;
   align-items: center;
@@ -19,6 +23,12 @@
 }
 .flex-aifs-jcsb{
   display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.flex-column-aifs-jcsb{
+  display: flex;
+  flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
 }
