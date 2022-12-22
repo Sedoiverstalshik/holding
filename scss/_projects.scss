@@ -32,6 +32,7 @@
   &__slide-link {
     font-size: 16px;
     position: relative;
+    transition: color .3s linear;
     &::after{
       content:'→';
       position: absolute;
@@ -39,6 +40,9 @@
       right: -23px;
       width: 20px;
       transform: translateY(-50%);
+    }
+    &:hover{
+      color: var(--hover_color);
     }
   }
   &__pagination{
@@ -55,7 +59,7 @@
     @extend .flex-aic-jcc;
     z-index: 1;
     &:hover{
-      background-color:#0d6da8;
+      background-color:var(--hover_color);
     }
   }
   &__button-prev{

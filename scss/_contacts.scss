@@ -1,9 +1,4 @@
 .contacts {
-  &__wrap {
-  }
-  &__top {
-    
-  }
   &__top-title {
     margin-bottom: 20px;
   }
@@ -38,6 +33,7 @@
     margin-bottom: 20px;
     padding: 15px 20px;
     width: 600px;
+    cursor: pointer;
   }
   &__top-textarea{
     padding-top: 10px;
@@ -45,20 +41,29 @@
     resize: none;
   }
   &__top-checkbox{
-    position: relative;
-    top: 5px;
-    width: 20px;
-    height: 20px;
-    margin-right: 10px;
-    background-color: transparent;
+    margin-right: 25px;
+    appearance: none;
     cursor: pointer;
-    &::after{
+    &::before{
       content: "";
       display: block;
       width: 20px;
       height: 20px;
       position: absolute;
-      border: 2px solid rgb(24, 137, 203);
+      top: 50%;
+      transform: translateY(-50%);
+      border: 2px solid #1889cb;
+    }
+    &:checked::after{
+      content: "";
+      display: block;
+      background-image: url('../images/checkmark.svg');
+      background-repeat: no-repeat;
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      top: -2px;
+      left: -2px;
     }
   }
   &__top-btn{
@@ -71,11 +76,30 @@
     padding: 14px;
     cursor: pointer;
     border:none;
+    transition: background-color .3s linear;
+    &:hover{
+      background-color: var(--hover_color);
+    }
   }
   &__bottom-box{
     @extend .flex-aifs-jcsb;
     gap: 40px;
     margin-bottom: 150px;
+  }
+  &__bottom-phone, &__bottom-email{
+    transition: color .3s linear;
+    &:hover{
+      color: var(--hover_color);
+    }
+  }
+  &__bottom-social-box{
+    @extend .flex-aic-jcfs;
+    gap: 10px;
+    svg{
+      &:hover .accent{
+        fill: var(--hover_color);
+      }
+    }
   }
   &__bottom-phone h4, &__bottom-email h4, &__bottom-social h4{
     font-size: 20px;
@@ -85,15 +109,30 @@
   }
 }
 
+svg{
+  .accent{
+    fill: var(--accent_color);
+  }
+  .white{
+    fill:var(--light_color);
+  }
+}
+
 .privacy {
   &__policy {
+    position: relative;
     font-size: 12px;
     font-weight: 100;
     color: rgb(0, 0, 0);
     margin-bottom: 20px;
+    cursor: pointer;
     a{
       color: rgb(51, 51, 51);
       border-bottom: 1px solid rgb(15, 106, 163);
+      transition: color .2s linear;
+      &:hover{
+        color: var(--hover_color);
+      }
     }
   }
 }

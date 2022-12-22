@@ -15,11 +15,9 @@
   }
   &__menu-submenu{
     position: relative;
-    transition-delay: 1s;
     &::before{
       content: '';
       position: absolute;
-      transition-delay: 1s;
       top: 10px;
       right: -15px;
       width: 5px;
@@ -29,10 +27,13 @@
       border-color: var(--text_color) transparent transparent transparent;
     }
   }
+  &__menu-submenu:hover::before{
+    border-color: var(--hover_color) transparent transparent transparent;
+  }
   &__menu-second{
     display: none;
     position: absolute;
-    top: 30px;
+    top: 100%;
     left:-155%;
     font-size:14px;
     background-color: var(--light_color);
