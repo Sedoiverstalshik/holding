@@ -1,0 +1,28 @@
+.stages-work {
+  margin-bottom: 150px;
+  &__title {
+    margin-bottom: 60px;
+  }
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 100px;
+  }
+  &__item {
+    list-style: auto;
+    flex-basis: 290px;
+    &::before{
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 46px;
+      height: 46px;
+      border-radius: 50%;
+      background-color: var(--accent_color);
+    }
+  }
+}

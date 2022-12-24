@@ -1,0 +1,27 @@
+.works {
+  margin-top: 150px;
+  margin-bottom: 150px;
+  padding-left: 20px;
+  padding-right: 20px;
+  &__wrap {
+    @extend .flex-aic-jcc;
+    gap: 40px;
+  }
+  &__img {
+    border-radius: 10px;
+    height: 450px;
+  }
+  &__list{
+    margin-bottom: 30px;
+  }
+  &__list-item {
+    font-size: 20px;
+    list-style: disc;
+    margin-left: 20px;
+  }
+  &__desc{
+    font-size: 20px;
+    max-width: 480px;
+  }
+}
+

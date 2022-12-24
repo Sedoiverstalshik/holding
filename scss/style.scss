@@ -28,6 +28,7 @@ body{
   color: var(--text_color);
   font-size:16px;
   line-height: 1.55;
+  position: relative;
 }
 .container{
   max-width: 1230px;
@@ -57,3 +58,7 @@ body{
 @import '_projects';
 @import '_contacts';
 @import '_footer';
+@import '_works';
+@import '_info';
+@import '_infoprojects-slider';
+@import '_stages-work';

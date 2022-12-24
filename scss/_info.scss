@@ -1,0 +1,13 @@
+.info {
+  margin-bottom: 60px;
+  &__text{
+    @extend .flex-aic-jcfs;
+    gap: 40px;
+  }
+  &__desc {
+    font-size: 20px;
+    // flex-grow: 1;
+    max-width: 560px;
+    width: 100%;
+  }
+}

@@ -1,5 +1,11 @@
 .header{
+  position: fixed;
+  top: 0;
   padding: 5px 0;
+  background-color: #f0f9ff;
+  width: 100%;
+  margin: 0 auto;
+  z-index: 5;
   &__wrap{
     @extend .flex-aic-jcsb;
   }
