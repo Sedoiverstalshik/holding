@@ -1,3 +1,20 @@
+const burgerBtn = document.querySelector('.burger__menu');
+const burgerMenu = document.querySelector('.header__wrap');
+const menuLink = document.querySelectorAll('.header__menu-list li a');
+
+burgerBtn.addEventListener('click', () => {
+  burgerMenu.classList.toggle('active');
+  burgerBtn.classList.toggle('active');
+})
+
+menuLink.forEach(link => {
+  link.addEventListener('click', () => {
+    burgerMenu.classList.toggle('active');
+    burgerBtn.classList.toggle('active');
+  })
+})
+
+
 const projectsSwiper = new Swiper('.projects__swiper', {
   loop: true,
   slidesPerView: 3,

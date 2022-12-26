@@ -1,0 +1,56 @@
+.projects-slider {
+  margin-bottom: 150px;
+  &__title{
+    margin-bottom: 60px;
+  }
+  &__swiper {
+    position: relative;
+    padding-bottom: 30px;
+  }
+  &__slide {
+    width: 560px;
+    height: 450px;
+  }
+  &__img {
+    width: 560px;
+    height: 450px;
+  }
+  &__pagination{
+    position: absolute;
+    bottom: -5px!important;
+  }
+  &__pagination span {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #c7c7c7;
+    opacity: 1;
+  }
+  .swiper-pagination-bullet-active {
+    background-color: var(--accent_color) ;
+  }
+  &__button{
+    position: absolute;
+    top: 50%;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #f0f9ff;
+    fill: var(--accent_color);
+    @extend .flex-aic-jcc;
+    z-index: 1;
+    transition: background-color .2s linear, fill .2s linear;
+    cursor: pointer;
+    &:hover{
+      background-color:var(--accent_color);
+      fill: var(--light_color);
+    }
+  }
+  &__button-prev {
+    left: 260px;
+  }
+  &__button-next {
+    right: 300px;
+  }
+}
+

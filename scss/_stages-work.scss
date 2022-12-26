@@ -8,21 +8,28 @@
     flex-wrap: wrap;
     align-items: flex-start;
     justify-content: space-between;
-    gap: 100px;
+    gap: 15px;
+    counter-reset: num;
   }
   &__item {
-    list-style: auto;
-    flex-basis: 290px;
+    position: relative;
+    padding-left: 70px;
+    flex-basis: 27%;
     &::before{
-      content: '';
+      content: counter(num); 
+      counter-increment: num;
+      display: inline-block;
       position: absolute;
+      top: 0;
       left: 0;
-      top: 50%;
-      transform: translateY(-50%);
       width: 46px;
       height: 46px;
       border-radius: 50%;
-      background-color: var(--accent_color);
+      background:  var(--accent_color);
+      color:  var(--light_color);
+      text-align: center;
+      line-height: 46px;
+      font-size: 20px;
     }
   }
 }

@@ -18,33 +18,41 @@
 <body>
   <header id="header" class="header">
     <div class="container">
-      <div class="header__wrap">
-        <a href="#" class="header__logo logo">
-          <img class="header__logo-img" src="images/logo.png" alt="Логотип Engineer Holding" width="100">
-        </a>
-        <nav class="header__menu menu">
-          <ul class="header__menu-list menu__list">
-            <li><a href="#">Главная</a></li>
-            <li class="header__menu-submenu"><a href="services">Услуги</a>
-              <ul class="header__menu-second">
-                <li><a href="#">Видеонаблюдение</a></li>
-                <li><a href="#">Сигнализация для охраны объекта</a></li>
-                <li><a href="#">Пожарная сигнализация и СОУЭ</a></li>
-                <li><a href="#">Система контроля доступа (СКУД)</a></li>
-                <li><a href="#">Беспроводная система «Умный дом» </a></li>
-                <li><a href="#">Локальные сети, оптические сети, телефония</a></li>
-                <li><a href="electrical_works.html"> Электромонтажные работы</a></li>
-                <li><a href="#">Системы дымоудаления, вентиляции и кондиционирования</a></li>
-              </ul>
-            </li>
-            <li><a href="#about">О компании</a></li>
-            <li><a href="#projects">Реализованные проекты</a></li>
-            <li><a href="#contacts">Контакты</a></li>
-          </ul>
-        </nav>
-        <a class="header__phone phone" href="tel:+79114930852">+7 (911) 493-08-52</a>
+      <div class="header__container">
+        <a class="header__phone-menu" href="tel:+79114930852">+7 (911) 493-08-52</a>
+        <div class="header__wrap">
+          <a href="/" class="header__logo logo">
+            <img class="header__logo-img" src="images/logo.png" alt="Логотип Engineer Holding" width="100">
+          </a>
+          <nav class="header__menu menu">
+            <ul class="header__menu-list menu__list">
+              <li><a href="index.html">Главная</a></li>
+              <li class="header__menu-submenu"><a>Услуги</a>
+                <ul class="header__menu-second">
+                  <li><a href="video_systems.html">Видеонаблюдение</a></li>
+                  <li><a href="#">Сигнализация для охраны объекта</a></li>
+                  <li><a href="#">Пожарная сигнализация и СОУЭ</a></li>
+                  <li><a href="#">Система контроля доступа (СКУД)</a></li>
+                  <li><a href="#">Беспроводная система «Умный дом» </a></li>
+                  <li><a href="#">Локальные сети, оптические сети, телефония</a></li>
+                  <li><a href="electrical_works.html"> Электромонтажные работы</a></li>
+                  <li><a href="#">Системы дымоудаления, вентиляции и кондиционирования</a></li>
+                </ul>
+              </li>
+              <li><a href="#about">О компании</a></li>
+              <li><a href="#projects">Реализованные проекты</a></li>
+              <li><a href="#contacts">Контакты</a></li>
+            </ul>
+          </nav>
+
+          <a class="header__phone phone" href="tel:+79114930852">+7 (911) 493-08-52</a>
+        </div>
+        <!-- /.header__wrap -->
+        <button class="header__burger-menu burger__menu">
+          <span></span>
+        </button>
       </div>
-      <!-- /.header__wrap -->
+      <!-- /.header__container -->
     </div>
     <!-- /.container -->
   </header>
@@ -52,7 +60,7 @@
   <main>
 
     <!-- intro -->
-    <section class="intro">
+    <section class="intro none">
       <div class="container">
         <div class="intro__wrap">
           <div class="intro__img">
@@ -63,7 +71,7 @@
             <p class="intro__desc">Специализируемся на проектировании и установке электротехнического и слаботочного
               инженерного оборудования
             </p>
-            <a class="intro__btn accent__btn" href="#">Получить консультацию</a>
+            <a class="intro__btn accent__btn" href="#contacts">Получить консультацию</a>
           </div>
         </div>
         <!-- /.intro__wrap -->
@@ -73,9 +81,9 @@
     <!--/ intro -->
 
     <!-- services -->
-    <section id="services" class="services">
+    <section id="services" class="services none">
       <div class="container">
-        <h2 class="services__title title center">Для корпоративных клиентов и частных лиц</h2>
+        <h2 class="services__title title">Для корпоративных клиентов и частных лиц</h2>
         <div class="services__box">
           <a class="services__item-link" href="#">
             <svg xmlns="http://www.w3.org/2000/svg" width="35" height="45" viewBox="0 0 345 448" fill="none">
@@ -286,10 +294,10 @@
     <!--/ services -->
 
     <!-- about -->
-    <section id="about" class="about">
+    <section id="about" class="about none">
       <div class="container">
         <div class="about__wrap">
-          <h2 class="about__title title center">О компании</h2>
+          <h2 class="about__title title">О компании</h2>
           <div class="about__desc">
             <p class="about__desc">Выступаем подрядчиком по монтажу и проектированию полного комплекса инженерных систем
               или по отдельным видам работ.
@@ -329,7 +337,7 @@
     <!--. about -->
 
     <!-- help -->
-    <section class="help">
+    <section class="help none">
       <div class="container">
         <div class="help__wrap">
           <div class="help__img">
@@ -349,10 +357,10 @@
     <!--/ help -->
 
     <!-- projects -->
-    <section id="projects" class="projects">
+    <section id="projects" class="projects none">
       <div class="container">
         <div class="projects__wrap">
-          <h2 class="projects__title title center">Участвуем в тендерах, выполняем работы в разных городах РФ</h2>
+          <h2 class="projects__title title">Участвуем в тендерах, выполняем работы в разных городах РФ</h2>
           <div class="projects__slider">
             <div class="projects__swiper swiper">
               <div class="projects__wrap swiper-wrapper">
@@ -465,11 +473,11 @@
     <!--/ projects -->
 
     <!-- contacts -->
-    <section id="contacts" class="contacts">
+    <section id="contacts" class="contacts none">
       <div class="container">
         <div class="contacts__wrap">
           <div class="contacts__top">
-            <h2 class="contacts__top-title title center">Расскажите о своей задаче</h2>
+            <h2 class="contacts__top-title title">Расскажите о своей задаче</h2>
             <p class="contacts__desc">Мы проконсультируем вас о возможных решениях</p>
             <div class="contacts__top-box">
               <img class="contacts__top-img" src="images/contacts_bg.png" alt="Фото девушки">
@@ -490,7 +498,7 @@
           </div>
           <!-- /.contacts__top -->
           <div class="contacts__bottom">
-            <h2 class="contacts__bottom-title title center">Свяжитесь с нами</h2>
+            <h2 class="contacts__bottom-title title">Свяжитесь с нами</h2>
             <div class="contacts__bottom-box">
               <div class="contacts__bottom-phone">
                 <h4>Телефон</h4>
@@ -567,11 +575,11 @@
     <!--/ contacts -->
   </main>
 
-  <footer class="footer">
+  <footer class="footer none">
     <div class="container">
       <div class="footer__wrap">
         <div class="footer__item">
-          <a href="#" class="footer__logo logo">
+          <a href="/" class="footer__logo logo">
             <img class="footer__logo-img" src="images/footer_logo.png" alt="Логотип Engineer Holding" width="120">
           </a>
           <p class="footer__copy">© 2022 Engineer Holding</p>
@@ -592,7 +600,7 @@
         <div class="footer__item">
           <h3 class="footer__item-title">Услуги</h3>
           <ul class="footer__menu-list menu__list">
-            <li><a href="#">Монтаж системы видеонаблюдения</a></li>
+            <li><a href="video_systems.html">Монтаж системы видеонаблюдения</a></li>
             <li><a href="#">Установка сигнализации для охраны объекта</a></li>
             <li><a href="#">Установка пожарной сигнализации и СОУЭ</a></li>
             <li><a href="#">Монтаж системы контроля управления доступом</a></li>
@@ -603,7 +611,7 @@
           <ul class="footer__menu-list menu__list">
             <li><a href="#">Локальные сети, оптические сети, телефония</a></li>
             <li><a href="#">Проектирование и монтаж «Умного дома»</a></li>
-            <li><a href="#">Электромонтажные работы в жилой и коммерческой недвижимости</a></li>
+            <li><a href="electrical_works.html">Электромонтажные работы в жилой и коммерческой недвижимости</a></li>
             <li><a href="#">Проектирование, монтаж, ремонт и обслуживание: технических систем дымоудаления, вентиляции и
                 кондиционирования</a></li>
           </ul>

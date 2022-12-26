@@ -37,6 +37,9 @@ body{
 }
 .title{
   font-size: 50px;
+  text-align: left;
+  max-width: 800px;
+  margin-bottom: 60px;
 }
 .accent__btn{
   @extend .flex-aic-jcc;
@@ -60,5 +63,10 @@ body{
 @import '_footer';
 @import '_works';
 @import '_info';
-@import '_infoprojects-slider';
+@import '_projects-slider';
 @import '_stages-work';
+
+
+.none{
+  display: none;
+}

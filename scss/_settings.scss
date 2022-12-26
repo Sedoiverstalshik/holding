@@ -1,6 +1,12 @@
-@function px-to-rem($size, $basicSize: 16px) {
-  @return $size / $basicSize#{rem};
+// @function px-to-rem($size, $basicSize: 16px) {
+//   @return $size / $basicSize#{rem};
+// }
+
+@function px-to-rem($value) {
+  $remValue: ($value / 16) + rem; 
+  @return $remValue;
 }
+
 .center{
   text-align: center;
   // max-width: 700px;

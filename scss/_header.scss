@@ -1,17 +1,27 @@
 .header{
   position: fixed;
   top: 0;
-  padding: 5px 0;
-  background-color: #f0f9ff;
+  padding: px-to-rem(5) 0;
+  background-color: var(--header-bg_color);
   width: 100%;
+  min-height: px-to-rem(65);
   margin: 0 auto;
   z-index: 5;
+  &__container{
+    @extend .flex-aic-jcsb;
+  }
+  &__phone-menu{
+    display: none;
+    color: var(--light_color);
+    font-size: px-to-rem(18);
+  }
   &__wrap{
     @extend .flex-aic-jcsb;
+    width: 100%;
   }
   &__menu-list{
     @extend .flex-aic-jcc;
-    gap: 50px;
+    gap: px-to-rem(50);
   }
   &__menu-list li a{
     transition: color .2s linear;
@@ -24,9 +34,9 @@
     &::before{
       content: '';
       position: absolute;
-      top: 10px;
-      right: -15px;
-      width: 5px;
+      top:  px-to-rem(10);
+      right:  px-to-rem(-15);
+      width:  px-to-rem(5);
       height: 0;
       border-style: solid;
       border-width: 5px 5px 0 5px;
@@ -41,17 +51,17 @@
     position: absolute;
     top: 100%;
     left:-155%;
-    font-size:14px;
+    font-size:px-to-rem(14);
     background-color: var(--light_color);
     border: 1px solid var(--accent_color);
     box-shadow: 0 0 5px var(--accent_color);
-    border-radius:5px;
-    width: 220px;
-    padding: 20px;
+    border-radius:px-to-rem(5);
+    width: px-to-rem(220);
+    padding: px-to-rem(20);
     transition-delay: 1s;
     z-index: 2;
     li + li{
-      margin-top: 12px;
+      margin-top: px-to-rem(12);
     }
   }
   &__menu-submenu:hover &__menu-second{
@@ -62,13 +72,127 @@
     color: var(--light_color);
     background-color: var(--accent_color);
     border:1px solid var(--accent_color);
-    border-radius: 10px;
-    padding: 10px 32px;
-    font-size: 14px;
+    border-radius: px-to-rem(10);
+    padding: px-to-rem(10) px-to-rem(32);
+    font-size: px-to-rem(14);
     transition: color .3s linear, background-color .3s linear;
     &:hover{
       color: var(--text_color);
       background-color: transparent;
     }
   }
+  &__burger-menu{
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    width: px-to-rem(28);
+    height: px-to-rem(20);
+    background-color: transparent;
+    border: none;
+    position: relative;
+    &::before, &::after, span{
+      content:'';
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: px-to-rem(3);
+      background-color: var(--light_color);
+      transition: transform .3s linear;
+    }
+    &::before{
+      top: 0;
+    }
+    &::after{
+      bottom: 0;
+    }
+  }
+  &__burger-menu.active span{
+    display: none;
+  }
+  &__burger-menu.active::before{
+    transform: rotate(45deg);
+    top: px-to-rem(9);
+  }
+  &__burger-menu.active::after{
+    transform: rotate(-45deg);
+    bottom: px-to-rem(9);
+  }
+}
+
+@media(max-width:980px){
+  .header{
+    background-color: var(--accent_color);
+    &__container{
+      padding: px-to-rem(20) px-to-rem(15);
+    }
+    &__phone-menu{
+      display: block;
+    }
+    &__wrap{
+      display: none;
+      justify-content: flex-start;
+      flex-direction: column;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      z-index: -1;
+    }
+    &__wrap.active {
+      display:flex;
+    }
+    &__logo{
+      margin-top: px-to-rem(100);
+      margin-bottom: px-to-rem(50);
+    }
+    &__menu{
+      padding: px-to-rem(10);
+    }
+    &__menu-list{
+      flex-direction: column;
+      gap: px-to-rem(15);
+      margin-bottom: px-to-rem(35);
+    }
+    &__menu-list li{
+      padding: 0;
+    }
+    &__menu-submenu{
+      text-align: center;
+      &::before{
+        right: -15px;
+      }
+    }
+    &__menu-second{
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      gap: px-to-rem(16);
+      position: unset;
+      background-color: transparent;
+      border: none;
+      box-shadow: none;
+      border-radius:0;
+      width: 100%;
+      li + li {
+        margin-top: 0;
+      }
+    }
+    &__menu-submenu:hover &__menu-second{
+      display: flex;
+      transition-delay: 1s;
+    }
+    
+    
+    &__burger-menu{
+      display: flex;
+      margin-left: px-to-rem(30);
+    }
+
+    &__phone{
+      margin-bottom: px-to-rem(35);
+    }
+  }
+  
 }
