@@ -584,6 +584,7 @@ svg .white {
   padding-top: 75px;
   color: var(--light_color);
   font-size: 14px;
+  width:100%;
 }
 .footer__wrap {
   padding-bottom: 90px;
