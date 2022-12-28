@@ -3,8 +3,7 @@
   &__box{
     @extend .flex-aic-jcfs;
     flex-wrap: wrap;
-    gap: 40px;
-    padding: 0 20px;
+    gap: 35px;
   }
   &__item-link{
     display: inline-block;
@@ -47,3 +46,34 @@
 
 }
 
+@media(max-width:1200px){
+  .services{
+    &__box{
+      flex-wrap: wrap;
+    }
+  }
+}
+@media(max-width:960px){
+  .services{
+    &__box{
+      justify-content: center;
+      gap: 10px;
+      padding: 0;
+    }
+    &__item-link{
+      max-width: 300px;
+    }
+  }
+}
+@media(max-width:640px){
+  .services{
+    &__box{
+      flex-direction: column;
+      gap: 15px;
+    }
+    &__item-link{
+      max-width: 460px;
+      height: 162px;
+    }
+  }
+}
