@@ -1,17 +1,18 @@
 .services{
-  margin-bottom: 150px;
+  margin-bottom: px-to-rem(150);
   &__box{
     @extend .flex-aic-jcfs;
     flex-wrap: wrap;
-    gap: 35px;
+    gap: px-to-rem(35);
   }
   &__item-link{
     display: inline-block;
-    max-width: 360px;
-    height: 240px;
+    max-width: px-to-rem(360);
+    width: 100%;
+    height: px-to-rem(240);
     position: relative;
     overflow: hidden;
-    border-radius: 10px;
+    border-radius: px-to-rem(10);
     transition: transform .3s linear;
     &::before{
       content: '';
@@ -25,8 +26,8 @@
     }
     svg{
       position: absolute;
-      top: 30px;
-      left: 30px;
+      top: px-to-rem(30);
+      left: px-to-rem(30);
     }
     &:hover{
       transform: rotate(-1deg);
@@ -36,12 +37,12 @@
     height: 100%;
   }
   &__item-title{
-    font-size: 18px;
+    font-size: px-to-rem(18);
     color: var(--light_color);
     position: absolute;
-    left: 30px;
-    bottom: 30px;
-    max-width: 280px;
+    left: px-to-rem(30);
+    bottom: px-to-rem(30);
+    max-width: px-to-rem(280);
   }
 
 }
@@ -55,25 +56,72 @@
 }
 @media(max-width:960px){
   .services{
+    &__wrap{
+      max-width: px-to-rem(630);
+      margin: 0 auto;
+    }
     &__box{
       justify-content: center;
-      gap: 10px;
+      gap: px-to-rem(10);
       padding: 0;
     }
     &__item-link{
-      max-width: 300px;
+      max-width: px-to-rem(300);
     }
   }
 }
 @media(max-width:640px){
   .services{
+    margin-top: px-to-rem(50);
+    margin-bottom: px-to-rem(80);
+    &__wrap{
+      max-width: px-to-rem(510);
+    }
     &__box{
       flex-direction: column;
-      gap: 15px;
+      align-items: flex-start;
+      gap: px-to-rem(15);
     }
     &__item-link{
-      max-width: 460px;
-      height: 162px;
+      max-width: px-to-rem(460);
+      height: px-to-rem(182);
+      svg{
+        top: px-to-rem(20);
+        left: px-to-rem(20);
+      }
+    }
+
+    &__item-img{
+      width: 100%;
+    }
+    &__item-title{
+      max-width: 100%;
+      left: px-to-rem(20);
+      bottom: px-to-rem(20);
+    }
+  }
+}
+@media(max-width:480px){
+  .services{
+    &__wrap{
+      max-width: px-to-rem(320);
+    }
+    &__item-link{
+      max-width: px-to-rem(300);
+      height: px-to-rem(182);
+      svg{
+        top: px-to-rem(15);
+        left:px-to-rem(15);
+      }
+    }
+
+    &__item-img{
+      width: 100%;
+    }
+    &__item-title{
+      font-size: px-to-rem(16);
+      left: px-to-rem(15);
+      bottom: px-to-rem(15);
     }
   }
 }

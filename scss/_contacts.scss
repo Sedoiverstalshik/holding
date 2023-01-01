@@ -1,22 +1,22 @@
 .contacts {
   &__top-title {
-    margin-bottom: 20px;
+    margin-bottom: px-to-rem(20);
   }
   &__desc {
-    font-size: 20px;
+    font-size:  px-to-rem(20);
     color: var(--text_color);
-    margin-bottom: 60px;
+    margin-bottom:  px-to-rem(60);
     text-align: left;
   }
   &__top-box {
     @extend .flex-aic-jcfs;
-    gap: 40px;
-    margin-bottom: 150px;
+    gap:  px-to-rem(40);
+    margin-bottom:  px-to-rem(150);
   }
   &__top-img{
-    max-width: 450px;
-    height: 450px;
-    border-radius: 10px;
+    max-width:  px-to-rem(450);
+    height:  px-to-rem(450);
+    border-radius:  px-to-rem(10);
   }
   &__top-form {
     display: flex;
@@ -27,28 +27,28 @@
     color: rgb(0, 0, 0);
     border: 1px solid rgb(0, 0, 0);
     background-color: transparent;
-    border-radius: 10px;
-    font-size: 16px;
+    border-radius:  px-to-rem(10);
+    font-size:  px-to-rem(16);
     font-weight: 400;
-    margin-bottom: 20px;
-    padding: 15px 20px;
-    width: 600px;
+    margin-bottom:  px-to-rem(20);
+    padding:  px-to-rem(15) px-to-rem(20);
+    width:  px-to-rem(600);
     cursor: pointer;
   }
   &__top-textarea{
-    padding-top: 10px;
-    height: 85px;
+    padding-top:  px-to-rem(10);
+    height:  px-to-rem(85);
     resize: none;
   }
   &__top-checkbox{
-    margin-right: 25px;
+    margin-right:  px-to-rem(25);
     appearance: none;
     cursor: pointer;
     &::before{
       content: "";
       display: block;
-      width: 20px;
-      height: 20px;
+      width:  px-to-rem(20);
+      height:  px-to-rem(20);
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
@@ -59,8 +59,8 @@
       display: block;
       background-image: url('../images/checkmark.svg');
       background-repeat: no-repeat;
-      width: 20px;
-      height: 20px;
+      width:  px-to-rem(20);
+      height:  px-to-rem(20);
       position: absolute;
       top: -2px;
       left: -2px;
@@ -68,12 +68,12 @@
   }
   &__top-btn{
     display: block;
-    font-size: 14px;
+    font-size:  px-to-rem(14);
     color: var(--light_color);
     background-color: var(--accent_color);
-    border-radius: 10px;
-    width: 260px;
-    padding: 14px;
+    border-radius:  px-to-rem(10);
+    width:  px-to-rem(260);
+    padding:  px-to-rem(14);
     cursor: pointer;
     border:none;
     transition: background-color .3s linear;
@@ -83,8 +83,8 @@
   }
   &__bottom-box{
     @extend .flex-aifs-jcsb;
-    gap: 40px;
-    margin-bottom: 150px;
+    gap:  px-to-rem(40);
+    margin-bottom:  px-to-rem(150);
   }
   &__bottom-phone, &__bottom-email{
     transition: color .3s linear;
@@ -94,7 +94,7 @@
   }
   &__bottom-social-box{
     @extend .flex-aic-jcfs;
-    gap: 10px;
+    gap:  px-to-rem(10);
     svg{
       &:hover .accent{
         fill: var(--hover_color);
@@ -102,10 +102,10 @@
     }
   }
   &__bottom-phone h4, &__bottom-email h4, &__bottom-social h4{
-    font-size: 20px;
-    margin-bottom: 10px;
+    font-size:  px-to-rem(20);
+    margin-bottom:  px-to-rem(10);
     border-bottom: 1px solid var(--accent_color);
-    width: 360px;
+    width:  px-to-rem(360);
   }
 }
 
@@ -121,10 +121,10 @@ svg{
 .privacy {
   &__policy {
     position: relative;
-    font-size: 12px;
+    font-size:  px-to-rem(12);
     font-weight: 100;
     color: rgb(0, 0, 0);
-    margin-bottom: 20px;
+    margin-bottom:  px-to-rem(20);
     cursor: pointer;
     a{
       color: rgb(51, 51, 51);
@@ -132,6 +132,126 @@ svg{
       transition: color .2s linear;
       &:hover{
         color: var(--hover_color);
+      }
+    }
+  }
+}
+
+@media(max-width:1200px){
+  .contacts{
+    &__top-img{
+      max-width:  px-to-rem(380);
+    }
+    &__top-input, 
+    &__top-textarea, 
+    .privacy__policy{
+      max-width:  px-to-rem(540);
+    }
+    &__bottom-phone, &__bottom-email, &__bottom-social{
+      width:  px-to-rem(300);
+      overflow: hidden;
+    }
+  }
+}
+@media(max-width:960px){
+  .contacts{
+    &__wrap{
+      max-width: px-to-rem(630);
+      margin: 0 auto;
+
+    }
+    &__top-box{
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    &__top-img{
+      max-width:  px-to-rem(540);
+    }
+    &__top-input, 
+    &__top-textarea,
+    .privacy__policy{
+      max-width:  px-to-rem(540);
+    }
+    &__bottom-box{
+      flex-wrap: wrap;
+      gap:  px-to-rem(30);
+    }
+    &__bottom-phone, &__bottom-email, &__bottom-social{
+      width:  px-to-rem(300);
+      overflow: hidden;
+    }
+  }
+}
+@media(max-width:640px){
+  .contacts{
+    margin-bottom: px-to-rem(50);
+    &__wrap{
+      max-width: px-to-rem(510);
+    }
+    &__top-box{
+      margin-bottom: px-to-rem(80);
+    }
+    &__top-img{
+      max-width:  px-to-rem(460);
+    }
+    &__top-input, 
+    &__top-textarea,
+    .privacy__policy{
+      max-width:  px-to-rem(460);
+    }
+    &__top-checkbox{
+      &::before{
+        top: 25%;
+      }
+    }
+    &__bottom-box{
+      flex-wrap: wrap;
+      gap:  px-to-rem(30);
+      margin-bottom: px-to-rem(80);
+    }
+    &__bottom-phone, &__bottom-email, &__bottom-social{
+      width: 100%;
+      overflow: visible;
+      h4{
+        width: 100%;
+      }
+    }
+  }
+}
+@media(max-width:480px){
+  .contacts{
+    &__wrap{
+      max-width: px-to-rem(320);
+    }
+    &__desc{
+      font-size:  px-to-rem(16);
+    }
+    &__top-box{
+      gap:  px-to-rem(20);
+    }
+    &__top-img{
+      max-width:  px-to-rem(300);
+      height: auto;
+    }
+    &__top-input, 
+    &__top-textarea,
+    .privacy__policy{
+      max-width:  px-to-rem(300);
+    }
+    &__top-checkbox{
+      &::before{
+        top: 25%;
+      }
+    }
+    &__bottom-box{
+      flex-wrap: wrap;
+      gap:  px-to-rem(30);
+    }
+    &__bottom-phone, &__bottom-email, &__bottom-social{
+      width: 100%;
+      overflow: visible;
+      h4{
+        width: 100%;
       }
     }
   }

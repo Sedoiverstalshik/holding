@@ -1,28 +1,28 @@
 .footer{
   background-color: #0a344f;
-  padding-top: 75px;
+  padding-top: px-to-rem(75);
   color: var(--light_color);
-  font-size: 14px;
+  font-size: px-to-rem(14);
   &__wrap{
     @extend .flex-aifs-jcsb;
-    padding-bottom: 90px;
+    padding-bottom: px-to-rem(90);
   }
   &__copy{
-    font-size: 12px;
+    font-size: px-to-rem(12);
     font-weight: 100;
-    margin-top: 21px;
+    margin-top: px-to-rem(21);
   }
   &__item-title{
     color: #8a8a8a;
-    font-size: 12px;
+    font-size: px-to-rem(12);
     font-weight: 100;
     letter-spacing: 1px;
     text-transform: uppercase;
-    margin-bottom: 14px;
+    margin-bottom: px-to-rem(14);
   }
   &__menu-list li{
-    max-width: 260px;
-    margin-bottom: 10px;
+    max-width: px-to-rem(260);
+    margin-bottom: px-to-rem(10);
     transition: color .2s linear;
     &:hover{
       color: var(--accent_color);
@@ -33,18 +33,84 @@
     opacity: 0.2;
   }
   &__bottom{
-    @extend .flex-aic-jcc;
-    gap: 100px;
-    min-height: 80px;
+    @extend .flex-aifs-jcsa;
+    gap: px-to-rem(10);
+    min-height: px-to-rem(80);
     color: #b8b8b8;
-    font-size: 12px;
+    font-size: px-to-rem(12);
     font-weight: 300;
+    padding: px-to-rem(20) 0;
     opacity: 0.8;
     a{
       transition: color .2s linear;
       &:hover{
         color: var(--light_color);
       }
+    }
+  }
+  &__developer{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media(max-width:1200px){
+  .footer{
+    &__wrap{
+      max-width: px-to-rem(960);
+      margin: 0 auto;
+      gap: px-to-rem(10);
+    }
+    &__item{
+      flex-basis: px-to-rem(230);
+    }
+  }
+}
+@media(max-width:960px){
+  .footer{
+    &__wrap{
+      max-width: px-to-rem(640);
+      flex-wrap: wrap;
+      gap: px-to-rem(30) px-to-rem(10);
+    }
+    &__item{
+      flex-basis: px-to-rem(300);
+    }
+    &__bottom{
+      max-width: px-to-rem(640);
+      margin: 0 auto;
+    }
+  }
+}
+@media(max-width:640px){
+  .footer{
+    &__wrap{
+      max-width: px-to-rem(510);
+      row-gap: px-to-rem(30);
+    }
+    &__item{
+      flex-basis: px-to-rem(220);
+    }
+    &__menu-list li{
+      margin-bottom: px-to-rem(15);
+    }
+    &__bottom{
+      max-width: px-to-rem(510);
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      gap:px-to-rem(20) px-to-rem(37);
+    }
+  }
+}
+@media(max-width:480px){
+  .footer{
+    padding-top: px-to-rem(30);
+    &__wrap{
+      max-width: px-to-rem(320);
+      padding-bottom: px-to-rem(30);
+    }
+    &__bottom{
+      max-width: px-to-rem(320);
     }
   }
 }

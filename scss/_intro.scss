@@ -59,6 +59,7 @@
 }
 @media(max-width:640px){
   .intro{
+    padding-bottom: px-to-rem(80);
     &__wrap{
       max-width: px-to-rem(510);
     }
