@@ -17,9 +17,6 @@ menuLink.forEach(link => {
 
 const projectsSwiper = new Swiper('.projects__swiper', {
   loop: true,
-  // slidesPerView: 3,
-  // spaceBetween: 40,
-  // centeredSlides: true,
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
@@ -67,5 +64,28 @@ const projectsSliderSwiper = new Swiper('.projects-slider__swiper', {
   navigation: {
     nextEl: '.projects__button-next',
     prevEl: '.projects__button-prev',
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 40,
+    },
+    481: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+    641: {
+      slidesPerView: 2,
+      spaceBetween: 40,
+    },
+    961: {
+      slidesPerView: 2,
+      spaceBetween: 80,
+    },
+    1201: {
+      centeredSlides: true,
+      slidesPerView: 2,
+      spaceBetween: 100,
+    },
   },
 });

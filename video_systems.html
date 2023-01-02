@@ -16,35 +16,44 @@
 </head>
 
 <body>
-  <header id="header" class="header">
+  <header id="header" class="header none">
     <div class="container">
-      <div class="header__wrap">
-        <a href="/" class="header__logo logo">
-          <img class="header__logo-img" src="images/logo.png" alt="Логотип Engineer Holding" width="100">
-        </a>
-        <nav class="header__menu menu">
-          <ul class="header__menu-list menu__list">
-            <li><a href="index.html">Главная</a></li>
-            <li class="header__menu-submenu"><a>Услуги</a>
-              <ul class="header__menu-second">
-                <li><a href="video_systems.html">Видеонаблюдение</a></li>
-                <li><a href="#">Сигнализация для охраны объекта</a></li>
-                <li><a href="#">Пожарная сигнализация и СОУЭ</a></li>
-                <li><a href="#">Система контроля доступа (СКУД)</a></li>
-                <li><a href="#">Беспроводная система «Умный дом» </a></li>
-                <li><a href="#">Локальные сети, оптические сети, телефония</a></li>
-                <li><a href="electrical_works.html"> Электромонтажные работы</a></li>
-                <li><a href="#">Системы дымоудаления, вентиляции и кондиционирования</a></li>
-              </ul>
-            </li>
-            <li><a href="#about">О компании</a></li>
-            <li><a href="#projects">Реализованные проекты</a></li>
-            <li><a href="#contacts">Контакты</a></li>
-          </ul>
-        </nav>
-        <a class="header__phone phone" href="tel:+79114930852">+7 (911) 493-08-52</a>
+      <div class="header__container">
+        <a class="header__phone-menu" href="tel:+79114930852">+7 (911) 493-08-52</a>
+        <button class="header__burger-menu burger__menu">
+          <span></span>
+        </button>
+        <div class="header__wrap">
+          <a href="/" class="header__logo logo">
+            <img class="header__logo-img" src="images/logo.png" alt="Логотип Engineer Holding" width="100">
+          </a>
+          <nav class="header__menu menu">
+            <ul class="header__menu-list menu__list">
+              <li><a href="index.html">Главная</a></li>
+              <li class="header__menu-submenu">Услуги
+                <ul class="header__menu-second">
+                  <li><a href="video_systems.html">Видеонаблюдение</a></li>
+                  <li><a href="#">Сигнализация для охраны объекта</a></li>
+                  <li><a href="#">Пожарная сигнализация и СОУЭ</a></li>
+                  <li><a href="#">Система контроля доступа (СКУД)</a></li>
+                  <li><a href="#">Беспроводная система «Умный дом» </a></li>
+                  <li><a href="#">Локальные сети, оптические сети, телефония</a></li>
+                  <li><a href="electrical_works.html"> Электромонтажные работы</a></li>
+                  <li><a href="#">Системы дымоудаления, вентиляции и кондиционирования</a></li>
+                </ul>
+              </li>
+              <li><a href="#about">О компании</a></li>
+              <li><a href="#projects">Реализованные проекты</a></li>
+              <li><a href="#contacts">Контакты</a></li>
+            </ul>
+          </nav>
+
+          <a class="header__phone phone" href="tel:+79114930852">+7 (911) 493-08-52</a>
+        </div>
+        <!-- /.header__wrap -->
+
       </div>
-      <!-- /.header__wrap -->
+      <!-- /.header__container -->
     </div>
     <!-- /.container -->
   </header>
@@ -76,6 +85,8 @@
             alt="Фото электрика" width="460" height="450">
           <div class="works__text">
             <h2 class="works__title title">Основные виды работ</h2>
+            <p class="works__subtitle">Устанавливаем видеокамеры, используем различные принципы работы, например:
+            </p>
             <ul class="works__list">
               <li class="works__list-item">
                 Проектирование
@@ -135,7 +146,7 @@
     <!--/ stages-work -->
 
     <!-- projects-slider -->
-    <section class="projects-slider">
+    <section class="projects-slider none">
       <div class="container">
         <h2 class="projects-slider__title title">Реализованные проекты</h2>
       </div>
