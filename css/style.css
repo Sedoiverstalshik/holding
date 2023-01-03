@@ -1481,6 +1481,12 @@ svg .white {
 .projects-slider__pagination {
   position: absolute;
   bottom: -5px !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .projects-slider__pagination.swiper-pagination-bullet-active {
   background-color: var(--accent_color) !important;
@@ -1518,18 +1524,39 @@ svg .white {
   .projects-slider {
     max-width: 100%;
   }
-  .projects-slider__slide, .projects-slider__slide img {
-    width: 460px;
+  .projects-slider__slide {
+    width: 660px !important;
     height: 370px;
   }
+  .projects-slider__slide img {
+    width: 560px;
+    height: 100%;
+    margin: 0 auto;
+  }
   .projects-slider__pagination {
-    bottom: 75px !important;
+    bottom: 0 !important;
   }
   .projects-slider__button-prev {
     left: 250px;
   }
   .projects-slider__button-next {
     right: 245px;
+  }
+}
+@media (max-width: 960px) {
+  .projects-slider {
+    max-width: 100%;
+  }
+  .projects-slider__slide {
+    background-position: center;
+    max-width: 540px !important;
+    width: 100% !important;
+    max-height: 340px;
+  }
+  .projects-slider__slide img {
+    width: 420px;
+    height: 100%;
+    margin: 0 auto;
   }
 }
 .stages-work {

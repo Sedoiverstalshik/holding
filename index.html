@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/normaleze.css">
+  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/swiper.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css">
   <link rel="stylesheet" href="css/style.css">
@@ -485,10 +485,10 @@
             <p class="contacts__desc">Мы проконсультируем вас о возможных решениях</p>
             <div class="contacts__top-box">
               <img class="contacts__top-img" src="images/contacts_bg.png" alt="Фото девушки">
-              <form class="contacts__top-form">
+              <form class="contacts__top-form" action="mail.php" method="post">
                 <input class="contacts__top-input" type="text" name="name" placeholder="Имя">
-                <input class="contacts__top-input" type="tel" name="name" placeholder="Телефон">
-                <input class="contacts__top-input" type="email" name="name" placeholder="Рабочая почта">
+                <input class="contacts__top-input" type="tel" name="phone" placeholder="Телефон">
+                <input class="contacts__top-input" type="email" name="email" placeholder="Рабочая почта">
                 <textarea class="contacts__top-textarea" name="message" placeholder="Ваше сообщение"></textarea>
                 <label class="privacy__policy">
                   <input class="contacts__top-checkbox" type="checkbox" name="checkbox" value="yes">

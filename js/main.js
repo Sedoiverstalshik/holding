@@ -54,11 +54,12 @@ const projectsSwiper = new Swiper('.projects__swiper', {
 
 const projectsSliderSwiper = new Swiper('.projects-slider__swiper', {
   loop: true,
-  slidesPerView: 2,
-  spaceBetween: 100,
+  // slidesPerView: 2,
+  // spaceBetween: 100,
   centeredSlides: true,
+  freeMode: false,
   pagination: {
-    el: '.swiper-pagination',
+    el: '.projects-slider__pagination',
     clickable: true,
   },
   navigation: {
@@ -75,15 +76,16 @@ const projectsSliderSwiper = new Swiper('.projects-slider__swiper', {
       spaceBetween: 20,
     },
     641: {
-      slidesPerView: 2,
-      spaceBetween: 40,
+      slidesPerView: 2.4,
+      // spaceBetween: 120,
     },
     961: {
-      slidesPerView: 2,
-      spaceBetween: 80,
+      slidesPerView: 5,
+      // spaceBetween: 80,
+      centeredSlides: true,
     },
     1201: {
-      centeredSlides: true,
+      // centeredSlides: true,
       slidesPerView: 2,
       spaceBetween: 100,
     },

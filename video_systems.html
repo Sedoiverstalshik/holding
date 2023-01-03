@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/normaleze.css">
+  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/swiper.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css">
   <link rel="stylesheet" href="css/style.css">
@@ -151,7 +151,7 @@
         <h2 class="projects-slider__title title">Реализованные проекты</h2>
       </div>
       <!-- /.container -->
-      <div class="projects-slider__swiper swiper">
+      <div class="projects-slider__swiper swiper ">
         <div class="projects-slider__wrap swiper-wrapper">
           <div class="projects-slider__slide swiper-slide">
             <img class="projects-slider__img"
@@ -176,8 +176,8 @@
           <!-- /.projects-slider__slide swiper-slide -->
         </div>
         <!-- /.projects-slider__wrap swiper-wrapper -->
-        <div class="projects-slider__pagination swiper-pagination"></div>
-        <div class="projects-slider__button projects__button-prev projects-slider__button-prev">
+        <div class="projects-slider__pagination "></div>
+        <div class="none projects-slider__button projects__button-prev projects-slider__button-prev">
           <svg width="10" height="17" fill="colorCurent" xmlns="http://www.w3.org/2000/svg"
             xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 250.738 250.738">
             <path d="M191.75,111.689L84.766,5.291c-7.1-7.055-18.613-7.055-25.713,0
@@ -186,7 +186,7 @@ c7.1,7.054,18.613,7.054,25.713,0L191.75,139.05c3.784-3.759,5.487-8.759,5.238-13.
 C197.237,120.447,195.534,115.448,191.75,111.689z" />
           </svg>
         </div>
-        <div class="projects-slider__button projects__button-next projects-slider__button-next">
+        <div class="none projects-slider__button projects__button-next projects-slider__button-next">
           <svg width="10" height="17" fill="colorCurent" xmlns="http://www.w3.org/2000/svg"
             xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 250.738 250.738">
             <path d="M191.75,111.689L84.766,5.291c-7.1-7.055-18.613-7.055-25.713,0
@@ -354,7 +354,15 @@ C197.237,120.447,195.534,115.448,191.75,111.689z" />
       <div class="footer__bottom">
         <a href="#" class="footer__privacy-policy">Политика конфиденциальности</a>
         <a href="#" class="footer__agreement">Согласие на обработку персональных данных</a>
+        <div class="footer__developer">Разработчик:
+          <a href="mailto:sedoiverstalshik@mail.ru" class="footer__developer-email">sedoiverstalshik@mail.ru</a>
+          <a href="tel:+79062348231" class="footer__developer-phone">8(906) 234 82 31</a>
+          <div class="">Дизайн:
+            <a href="https://markonline.ru/" class="footer__developer-phone">markonline.ru production</a>
+          </div>
+        </div>
       </div>
+
       <!-- /.footer__bottom -->
     </div>
   </footer>

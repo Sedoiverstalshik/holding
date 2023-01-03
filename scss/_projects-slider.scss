@@ -18,6 +18,8 @@
   &__pagination{
     position: absolute;
     bottom: -5px!important;
+    display: flex;
+    justify-content: center;
   }
   
   &__pagination.swiper-pagination-bullet-active {
@@ -56,13 +58,17 @@
 @media(max-width:1200px){
   .projects-slider{
     max-width: 100%;
-    &__slide,
-    &__slide img{
-      width: 460px;
+    &__slide{
+      width: 660px!important;
       height: 370px;
+      img{
+        width: 560px;
+        height: 100%;
+        margin: 0 auto;
+      }
     }
     &__pagination{
-      bottom: 75px!important;
+      bottom: 0!important;
     }
     &__button-prev {
       left: 250px;
@@ -70,5 +76,30 @@
     &__button-next {
       right: 245px;
     }
+  }
+}
+@media(max-width:960px){
+  .projects-slider{
+    max-width: 100%;
+    &__slide{
+      background-position: center;
+      max-width: 540px!important;
+      width: 100%!important;
+      max-height: 340px;
+      img{
+        width: 420px;
+        height: 100%;
+        margin: 0 auto;
+      }
+    }
+    // &__pagination{
+    //   bottom: 0!important;
+    // }
+    // &__button-prev {
+    //   left: 250px;
+    // }
+    // &__button-next {
+    //   right: 245px;
+    // }
   }
 }
