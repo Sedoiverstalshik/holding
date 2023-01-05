@@ -95,6 +95,12 @@
     &__slide {
       height: px-to-rem(290);
     }
+    &__button-prev{
+      left: px-to-rem(-25);
+    }
+    &__button-next{
+      right: px-to-rem(-25);
+    }
   }
 }
 @media(max-width:640px){
@@ -102,11 +108,18 @@
     &__swiper,
     &__slider{
       max-width: px-to-rem(340);
+      padding-bottom: px-to-rem(30);
     }
     &__slide {
       height: px-to-rem(355);
     }
+    &__pagination{
+      display: flex;
+      justify-content: center;
+      margin-bottom: px-to-rem(-5);
+    }
     &__button{
+      display: none;
       width: px-to-rem(24);
       height: px-to-rem(24);
     }
@@ -122,7 +135,7 @@
   .projects{
     &__swiper,
     &__slider{
-      max-width: px-to-rem(260);
+      max-width: px-to-rem(320);
     }
     &__slide {
       height: px-to-rem(302);

@@ -1,0 +1,28 @@
+.agreement{
+  color: var(--text_color);
+  &__wrap{
+    display: flex;flex-direction: column;
+    gap: 20px;
+  }
+  &__title{
+    font-size: 30px;
+    margin-bottom: 60px;
+  }
+  &__list{
+    padding-left: 20px;
+    p{
+      margin-left: -20px;
+    }
+  }
+  &__item{
+    list-style: disc;
+  }
+}
+
+@media(max-width:640px){
+  .agreement{
+    &__title{
+      margin-bottom: 10px;
+    }
+  }
+}

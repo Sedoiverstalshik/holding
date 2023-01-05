@@ -15,10 +15,13 @@ menuLink.forEach(link => {
 })
 
 
+
+
+
 const projectsSwiper = new Swiper('.projects__swiper', {
   loop: true,
   pagination: {
-    el: '.swiper-pagination',
+    el: '.projects__pagination',
     clickable: true,
   },
   navigation: {
@@ -26,7 +29,7 @@ const projectsSwiper = new Swiper('.projects__swiper', {
     prevEl: '.projects__button-prev',
   },
   breakpoints: {
-    320: {
+    310: {
       slidesPerView: 1,
       spaceBetween: 40,
     },
@@ -51,42 +54,37 @@ const projectsSwiper = new Swiper('.projects__swiper', {
 });
 
 
-
 const projectsSliderSwiper = new Swiper('.projects-slider__swiper', {
   loop: true,
-  // slidesPerView: 2,
-  // spaceBetween: 100,
+  slidesPerView: 1.65,
+  spaceBetween: 100,
   centeredSlides: true,
-  freeMode: false,
   pagination: {
     el: '.projects-slider__pagination',
     clickable: true,
   },
+
   navigation: {
-    nextEl: '.projects__button-next',
-    prevEl: '.projects__button-prev',
+    nextEl: '.projects-slider__next',
+    prevEl: '.projects-slider__prev',
   },
+
   breakpoints: {
-    320: {
-      slidesPerView: 1,
-      spaceBetween: 40,
-    },
-    481: {
+    310: {
       slidesPerView: 1,
       spaceBetween: 20,
     },
+    481: {
+      slidesPerView: 1,
+      spaceBetween: 40,
+    },
     641: {
-      slidesPerView: 2.4,
-      // spaceBetween: 120,
+      spaceBetween: 60,
     },
     961: {
-      slidesPerView: 5,
-      // spaceBetween: 80,
-      centeredSlides: true,
+      spaceBetween: 80,
     },
     1201: {
-      // centeredSlides: true,
-      slidesPerView: 2,
       spaceBetween: 100,
     },
   },

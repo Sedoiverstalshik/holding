@@ -3,7 +3,6 @@
   top: 0;
   padding: px-to-rem(5) 0;
   background-color: var(--header-bg_color);
-  // background: linear-gradient(180deg, var(--accent_color) 10%, var(--light_color) 100%);
   width: 100%;
   min-height: px-to-rem(65);
   margin: 0 auto;
@@ -26,8 +25,11 @@
   }
   &__menu-list li a{
     transition: color .2s linear;
-    &:hover{
+    &:hover,
+    &:active,
+    &:focus{
       color: var(--accent_color);
+      outline-color: var(--accent_color);
     }
   }
   &__menu-submenu{

@@ -1,35 +1,152 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="/favicon.ico">
 
-    <title>Отправка формы на почту </title>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/swiper.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Engineer Holding</title>
+</head>
 
-    <!-- Bootstrap core CSS -->
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
-  </head>
-
-  <body>
+<body>
+  <header id="header" class="header">
     <div class="container">
+      <div class="header__container">
+        <a class="header__phone-menu" href="tel:+79114930852">+7 (911) 493-08-52</a>
+        <button class="header__burger-menu burger__menu">
+          <span></span>
+        </button>
+        <div class="header__wrap">
+          <a href="/" class="header__logo logo">
+            <img class="header__logo-img" src="images/logo.png" alt="Логотип Engineer Holding" width="100">
+          </a>
+          <nav class="header__menu menu">
+            <ul class="header__menu-list menu__list">
+              <li><a href="index.html">Главная</a></li>
+              <li class="header__menu-submenu">Услуги
+                <ul class="header__menu-second">
+                  <li><a href="video_systems.html">Видеонаблюдение</a></li>
+                  <li><a href="#">Сигнализация для охраны объекта</a></li>
+                  <li><a href="#">Пожарная сигнализация и СОУЭ</a></li>
+                  <li><a href="#">Система контроля доступа (СКУД)</a></li>
+                  <li><a href="#">Беспроводная система «Умный дом» </a></li>
+                  <li><a href="#">Локальные сети, оптические сети, телефония</a></li>
+                  <li><a href="electrical_works.html"> Электромонтажные работы</a></li>
+                  <li><a href="#">Системы дымоудаления, вентиляции и кондиционирования</a></li>
+                </ul>
+              </li>
+              <li><a href="#about">О компании</a></li>
+              <li><a href="#projects">Реализованные проекты</a></li>
+              <li><a href="#contacts">Контакты</a></li>
+            </ul>
+          </nav>
 
-      <h1 class="text-center">Спасибо!</h1>
+          <a class="header__phone phone" href="tel:+79114930852">+7 (911) 493-08-52</a>
+        </div>
+        <!-- /.header__wrap -->
 
-    </div><!-- /.container -->
+      </div>
+      <!-- /.header__container -->
+    </div>
+    <!-- /.container -->
+  </header>
 
+  <main>
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="http://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
-  </body>
+    <!-- intro -->
+    <section class="intro">
+      <div class="container">
+        <div class="intro__wrap">
+          <div class="intro__img">
+            <img src="images/thank_you.jpg" alt="Изображение камеры видеонаблюдения" width="460">
+          </div>
+          <div class="intro__text">
+            <h1 class="intro__title title">Спасибо</h1>
+            <p class="intro__desc">Данные успешно отправлены, скоро мы свяжемся с вами
+            </p>
+            <a class="intro__btn accent__btn" href="index.html">Главная</a>
+          </div>
+        </div>
+        <!-- /.intro__wrap -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!--/ intro -->
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__wrap">
+        <div class="footer__item">
+          <a href="/" class="footer__logo logo">
+            <img class="footer__logo-img" src="images/footer_logo.png" alt="Логотип Engineer Holding" width="120">
+          </a>
+          <p class="footer__copy">© 2022 Engineer Holding</p>
+        </div>
+        <!-- /.footer__item -->
+        <div class="footer__item">
+          <nav class="footer__menu menu">
+            <h3 class="footer__item-title">Меню</h3>
+            <ul class="footer__menu-list menu__list">
+              <li><a href="#header">Главная</a></li>
+              <li><a href="#about">О компании</a></li>
+              <li><a href="#projects">Реализованные проекты</a></li>
+              <li><a href="#contacts">Контакты</a></li>
+            </ul>
+          </nav>
+        </div>
+        <!-- /.footer__item -->
+        <div class="footer__item">
+          <h3 class="footer__item-title">Услуги</h3>
+          <ul class="footer__menu-list menu__list">
+            <li><a href="video_systems.html">Монтаж системы видеонаблюдения</a></li>
+            <li><a href="#">Установка сигнализации для охраны объекта</a></li>
+            <li><a href="#">Установка пожарной сигнализации и СОУЭ</a></li>
+            <li><a href="#">Монтаж системы контроля управления доступом</a></li>
+          </ul>
+        </div>
+        <!-- /.footer__item -->
+        <div class="footer__item">
+          <ul class="footer__menu-list menu__list">
+            <li><a href="#">Локальные сети, оптические сети, телефония</a></li>
+            <li><a href="#">Проектирование и монтаж «Умного дома»</a></li>
+            <li><a href="electrical_works.html">Электромонтажные работы в жилой и коммерческой недвижимости</a></li>
+            <li><a href="#">Проектирование, монтаж, ремонт и обслуживание: технических систем дымоудаления, вентиляции и
+                кондиционирования</a></li>
+          </ul>
+        </div>
+        <!-- /.footer__item -->
+      </div>
+      <!-- /.footer__wrap -->
+    </div>
+    <!-- /.container -->
+    <hr class="footer__line">
+    <div class="container">
+      <div class="footer__bottom">
+        <a href="privacy-policy.html" class="footer__privacy-policy">Политика конфиденциальности</a>
+        <a href="agreement.html" class="footer__agreement">Согласие на обработку персональных данных</a>
+        <div class="footer__developer">Разработчик:
+          <a href="mailto:sedoiverstalshik@mail.ru" class="footer__developer-email">sedoiverstalshik@mail.ru</a>
+          <a href="tel:+79062348231" class="footer__developer-phone">8(906) 234 82 31</a>
+          <div class="">Дизайн:
+            <a href="https://markonline.ru/" class="footer__developer-phone">markonline.ru production</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- /.footer__bottom -->
+    </div>
+  </footer>
+  <script src="js/swiper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
 </html>
-	

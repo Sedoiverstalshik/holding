@@ -86,7 +86,7 @@
     gap:  px-to-rem(40);
     margin-bottom:  px-to-rem(150);
   }
-  &__bottom-phone, &__bottom-email{
+  &__bottom-phone a, &__bottom-email a{
     transition: color .3s linear;
     &:hover{
       color: var(--hover_color);
@@ -96,25 +96,21 @@
     @extend .flex-aic-jcfs;
     gap:  px-to-rem(10);
     svg{
-      &:hover .accent{
-        fill: var(--hover_color);
+      color: var(--accent_color);
+      transition: color .3s linear;
+      &:hover {
+        color: var(--hover_color);
       }
     }
+  }
+  &__bottom-box a svg:hover {
+      fill: var(--hover_color);
   }
   &__bottom-phone h4, &__bottom-email h4, &__bottom-social h4{
     font-size:  px-to-rem(20);
     margin-bottom:  px-to-rem(10);
     border-bottom: 1px solid var(--accent_color);
     width:  px-to-rem(360);
-  }
-}
-
-svg{
-  .accent{
-    fill: var(--accent_color);
-  }
-  .white{
-    fill:var(--light_color);
   }
 }
 

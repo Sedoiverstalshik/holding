@@ -1,0 +1,13 @@
+.privacy-policy{
+  &__title{
+    font-size: 30px;
+    margin-bottom: 60px;
+  }
+}
+@media(max-width:640px){
+  .privacy-polic{
+    &__title{
+      margin-bottom: 10px;
+    }
+  }
+}
